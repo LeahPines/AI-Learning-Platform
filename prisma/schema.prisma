@@ -1,6 +1,5 @@
 generator client {
   provider = "prisma-client-js"
-  output   = "../src/generated/prisma"
 }
 
 datasource db {
@@ -8,11 +7,19 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum Role {
+  USER
+  ADMIN
+}
+
 model User {
-  id      String   @id @default(cuid())
-  name    String
-  phone   String   @unique
-  prompts Prompt[]
+  id        String   @id @default(cuid())
+  name      String
+  phone     String   @unique
+  password  String
+  prompts   Prompt[]
+  role      Role     @default(USER) // Change from String to Role
+  createdAt DateTime @default(now())
 }
 
 model Category {
@@ -42,5 +49,3 @@ model Prompt {
   subCategoryId String
   createdAt     DateTime    @default(now())
 }
-
-
