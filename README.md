@@ -38,7 +38,7 @@ To access the admin dashboard, use:
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/LeahPines/https://github.com/LeahPines/AI-Learning-Platform.git
+git clone https://github.com/LeahPines/AI-Learning-Platform.git
 cd AI-Learning-Platform
 ```
 
