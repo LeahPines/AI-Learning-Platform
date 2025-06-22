@@ -38,8 +38,8 @@ To access the admin dashboard, use:
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/LeahPines/https://github.com/LeahPines/AI-Learning-Platform.git
+cd AI-Learning-Platform
 ```
 
 ### 2. **Environment Variables**
@@ -71,7 +71,7 @@ Edit `backend/.env` as needed.
    ```bash
    cd backend
    npm install
-   npx prisma migrate deploy
+   npx prisma generate
    npm run dev
    ```
 
