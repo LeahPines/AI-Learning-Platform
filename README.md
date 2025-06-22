@@ -46,7 +46,7 @@ cd AI-Learning-Platform
 
 Create a file named .env inside the backend root directory with the following content:
 
-## 📄 Sample `.env.example` (Backend)
+### 📄 Sample `.env.example` (Backend)
 
 ```env
 # backend/.env.example
@@ -88,8 +88,6 @@ Edit `backend/.env` as needed.
    npm install
    npm run dev
    ```
-
----
 
 ---
 
