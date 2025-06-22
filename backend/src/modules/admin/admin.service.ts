@@ -27,13 +27,7 @@ export const getUsersWithHistoryService = async () => {
       role: true,
       prompts: {
         orderBy: { createdAt: "desc" },
-        select: {
-          id: true,
-          prompt: true,
-          response: true,
-          createdAt: true,
-        },
-      },
-    },
+      }
+    }
   });
 };

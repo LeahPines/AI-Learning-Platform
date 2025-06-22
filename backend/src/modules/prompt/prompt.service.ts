@@ -7,7 +7,7 @@ export const generateAIResponse = async (prompt: string): Promise<string> => {
   const chatCompletion = await openai.chat.completions.create({
     model: "gpt-3.5-turbo",
     messages: [{ role: "user", content: prompt }],
-    max_tokens: 256,
+    max_tokens: 2048,
   });
   return chatCompletion.choices[0].message?.content?.trim()|| "No response.";
 };
