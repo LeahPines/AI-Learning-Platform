@@ -9,7 +9,7 @@ export const generateJWT = (user: { id: string; phone: string; role: string }) =
       role: user.role,
     },
     JWT_SECRET as string,
-    { expiresIn: "1h" }
+    { expiresIn: "3h" }
   );
 };
 
