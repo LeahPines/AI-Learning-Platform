@@ -44,10 +44,17 @@ cd AI-Learning-Platform
 
 ### 2. **Environment Variables**
 
-Copy the example env file and fill in your secrets:
+Create a file named .env inside the backend root directory with the following content:
 
-```bash
-cp backend/.env.example backend/.env
+## 📄 Sample `.env.example` (Backend)
+
+```env
+# backend/.env.example
+
+DATABASE_URL="postgresql://postgres:A1rPlatf0rm!Dev2025@localhost:5432/learning_db"
+JWT_SECRET=your_jwt_secret_key
+OPENAI_API_KEY=your_openai_key
+PORT=5000
 ```
 
 Edit `backend/.env` as needed.
@@ -83,17 +90,6 @@ Edit `backend/.env` as needed.
    ```
 
 ---
-
-## 📄 Sample `.env.example` (Backend)
-
-```env
-# backend/.env.example
-
-DATABASE_URL="postgresql://postgres:A1rPlatf0rm!Dev2025@localhost:5432/learning_db"
-JWT_SECRET=your_jwt_secret_key
-OPENAI_API_KEY=your_openai_key
-PORT=5000
-```
 
 ---
 
