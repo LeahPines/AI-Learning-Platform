@@ -1,6 +1,6 @@
 # AI Learning Platform
 
-A full-stack web application for AI-powered lesson generation and user management.
+A full-stack AI-powered learning platform that allows users to generate personalized lessons.Includes authentication, user history tracking, and an admin dashboard for managing users and content.
 
 ---
 ## 📝 Overview
@@ -55,8 +55,6 @@ Edit `backend/.env` as needed.
 - Node.js and npm are installed on your system.
 - Docker and Docker Compose are installed and running.
 - The backend and frontend run on separate ports.
-- Environment variables are provided via `.env` files.
-- The database is managed via Docker Compose for easy setup.
 
 ---
 
@@ -101,21 +99,16 @@ PORT=5000
 
 - The provided `docker-compose.yml` will spin up a PostgreSQL database.
 - You can view and edit your database using Prisma Studio.
-
----
-
-🐳 Useful Docker Commands
-bash
-Copy
-Edit
+- Useful Docker Commands
+```bash
 # Stop all containers
 docker compose down
 
 # Access database GUI
 npx prisma studio
-
+```
 ---
 
 ## 📧 License
 
-MIT © [Leah Pines]
+MIT © [Leah Pines | Full-Stack AI driven pllatform | 2025]
