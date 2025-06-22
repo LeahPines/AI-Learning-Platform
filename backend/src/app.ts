@@ -1,9 +1,11 @@
 import express from "express";
 import {authRoutes,userRoutes,adminRoutes,promptRoutes,categoryRoutes,subcategoryRoutes,} from "./modules";
 import { errorHandler } from "./core/middlewares/errorHandler.middleware";
+import cors from "cors";
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use(errorHandler);
 

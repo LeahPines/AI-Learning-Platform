@@ -5,7 +5,7 @@ export const getUserPromptHistory = async (req: Request, res: Response, next: Ne
   try {
     const userId = (req as any).user.id; 
     const history = await getUserPromptHistoryService(userId);
-    res.json({ history });
+    res.json( history );
   } catch (error) {
     next(error);
   }

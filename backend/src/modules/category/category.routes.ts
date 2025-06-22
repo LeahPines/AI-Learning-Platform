@@ -4,7 +4,7 @@ import { authenticateJWT, authorizeRoles } from "../../core/middlewares/auth.mid
 
 const router = Router();
 
-router.get("/", authenticateJWT, getCategories);
-router.post("/", authenticateJWT, authorizeRoles("ADMIN"), addCategory);
+router.get("/allCategories", getCategories);
+router.post("/addCategory", authenticateJWT, authorizeRoles("ADMIN"), addCategory);
 
 export default router;
