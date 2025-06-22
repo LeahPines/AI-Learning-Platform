@@ -1,11 +1,11 @@
 # AI Learning Platform
 
-A full-stack web application for AI-powered lesson generation and user management.
+A full-stack AI-powered learning platform that empowers users to generate personalized lessons using advanced AI technology.
 
 ---
 ## 📝 Overview
 
-The **AI Learning Platform** is an intelligent, interactive web application that brings personalized education to everyone. Users can explore a wide range of topics by selecting a category, subcategory, and customizing additional options, then submitting a personalized prompt. The platform’s AI instantly generates tailored learning content based on these unique user inputs, ensuring every lesson is relevant and engaging.
+The **AI Learning Platform** is an intelligent, interactive web application that brings personalized education to everyone. Users can explore a wide range of topics by selecting a category, subcategory, and customizing additional preferences, then submitting a personalized prompt. The platform’s AI instantly generates tailored learning content based on these unique user requirements, ensuring every lesson is relevant and engaging.
 
 ## 🚀 Technologies Used
 
@@ -23,6 +23,8 @@ The **AI Learning Platform** is an intelligent, interactive web application that
 - **Learning History Tracking:** Users can view their complete history of generated lessons and prompts.
 - **Admin Dashboard:** Admins can view all users and their learning histories, as well as add and view categories and subcategories.
 - **Role-Based Access Control:** Ensures only authorized users can access sensitive features and administrative tools.
+- **Postman-Tested API Endpoints:** Backend routes thoroughly tested via Postman to ensure reliable request/response handling.
+
 
 ## 🛡️ Admin Access
 
@@ -55,8 +57,6 @@ Edit `backend/.env` as needed.
 - Node.js and npm are installed on your system.
 - Docker and Docker Compose are installed and running.
 - The backend and frontend run on separate ports.
-- Environment variables are provided via `.env` files.
-- The database is managed via Docker Compose for easy setup.
 
 ---
 
@@ -101,21 +101,16 @@ PORT=5000
 
 - The provided `docker-compose.yml` will spin up a PostgreSQL database.
 - You can view and edit your database using Prisma Studio.
-
----
-
-🐳 Useful Docker Commands
-bash
-Copy
-Edit
+- Useful Docker Commands
+```bash
 # Stop all containers
 docker compose down
 
 # Access database GUI
 npx prisma studio
-
+```
 ---
 
 ## 📧 License
 
-MIT © [Leah Pines]
+MIT © [Leah Pines | Full-Stack AI driven platform | 2025]
