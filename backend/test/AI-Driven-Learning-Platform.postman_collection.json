@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "17db5d4d-078d-4dfd-bd6b-c41fd37323f4",
+		"name": "AI-Driven-Learning-Platform",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39460485"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/auth/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Leah Pines\",\r\n  \"phone\": \"0527639973\",\r\n  \"password\": \"lp0527639973\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"phone\": \"0527639973\",\r\n  \"password\": \"lp0527639973\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/category",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtYzB4dGJwNDAwMDBodXg4MjVweTBucm0iLCJwaG9uZSI6IjEyMzQ1Njc4OTAiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTc1MDE4OTgwNywiZXhwIjoxNzUwMTkzNDA3fQ.QMdT5sPR5uyy8Nulcw6ha1b3LPLNsav4bln_pNJsxHk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/category",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtYzB6YnkzdzAwMDNodXg4ZGJzenAzdnYiLCJwaG9uZSI6IjA1Mjc2Mzk5NzMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NTAxOTIzNzMsImV4cCI6MTc1MDE5NTk3M30.5FFEawsUvyYSflqLi3MjzZF0IC7U2yQdPPyg--qtfd4",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Food\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/subcategory/categories/cmc0zdpv10005hux8lxqdblqq/subcategories",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtYzB6YnkzdzAwMDNodXg4ZGJzenAzdnYiLCJwaG9uZSI6IjA1Mjc2Mzk5NzMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NTAxOTI3OTMsImV4cCI6MTc1MDE5NjM5M30.YWgcvp_LAXGdrP_6D_QywV2r0GAFlsXeGQhDEMFM2qg",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"full stack\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/subcategory/categories/cmc0zdpv10005hux8lxqdblqq/subcategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"subcategory",
+						"categories",
+						"cmc0zdpv10005hux8lxqdblqq",
+						"subcategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/category/allCategories",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtYzB6YnkzdzAwMDNodXg4ZGJzenAzdnYiLCJwaG9uZSI6IjA1Mjc2Mzk5NzMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NTAxOTIzNzMsImV4cCI6MTc1MDE5NTk3M30.5FFEawsUvyYSflqLi3MjzZF0IC7U2yQdPPyg--qtfd4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/category/allCategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"category",
+						"allCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/prompt",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtYzB6YnkzdzAwMDNodXg4ZGJzenAzdnYiLCJwaG9uZSI6IjA1Mjc2Mzk5NzMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NTAxOTIzNzMsImV4cCI6MTc1MDE5NTk3M30.5FFEawsUvyYSflqLi3MjzZF0IC7U2yQdPPyg--qtfd4",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"categoryId\": \"cmc0zdpv10005hux8lxqdblqq\",\r\n  \"subCategoryId\": \"cmc0ztl0h000bhux87pozfu2x\",\r\n  \"prompt\": \"Give me a lesson that explaines a fullstack developer how does AI work?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/prompt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"prompt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"phone\": \"0527639973\",\r\n  \"password\": \"lp0527639973\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
