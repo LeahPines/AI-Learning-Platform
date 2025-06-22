@@ -17,7 +17,7 @@ interface AuthState {
 
 const userFromStorage = localStorage.getItem('user');
 const initialState: AuthState = {
-  user: userFromStorage ? JSON.parse(userFromStorage) : null,
+user: userFromStorage && userFromStorage !== "undefined" ? JSON.parse(userFromStorage) : null,
   token: localStorage.getItem('token'),
   isLoading: false,
   error: null,
