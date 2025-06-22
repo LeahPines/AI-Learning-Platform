@@ -1,3 +1,8 @@
+# AI Learning Platform
+
+A full-stack web application for AI-powered lesson generation and user management.
+
+---
 ## 📝 Overview
 
 The **AI Learning Platform** is an intelligent, interactive web application that brings personalized education to everyone. Users can explore a wide range of topics by selecting a category, subcategory, and customizing additional options, then submitting a personalized prompt. The platform’s AI instantly generates tailored learning content based on these unique user inputs, ensuring every lesson is relevant and engaging.
@@ -25,15 +30,6 @@ To access the admin dashboard, use:
 
 - **Phone:** `0527639973`
 - **Password:** `lp0527639973`
-
-
-
-
-# AI Learning Platform
-
-A full-stack web application for AI-powered lesson generation and user management.
-
----
 
 ## ⚡ Setup Instructions
 
